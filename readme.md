@@ -12,6 +12,6 @@ We gather data over time using several independent threads.
 ### Analysis
 Before the score curves can be analyzed, we have to clean the data.  Reddit introduces soft caps into scores in order to level the playing field between posts in popular vs unpopular subreddit communities.  Our first step is to detect and remove any score jumps due to soft caps, of which there may be multiple for a single posting.
 
-<img href="/Data/capped.png" width="350px"> <img href="/Data/uncapped.png" width="350px">
+<img src="/Data/capped.png" width="350px"> <img src="/Data/uncapped.png" width="350px">
 
 Next, we use numerical methods to look at first and second derivatives for the posting curves.  We then sort posts by final score, and generate PDFs of their graphs.
