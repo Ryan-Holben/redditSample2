@@ -1,7 +1,7 @@
 RedditSample
 ========
 <figure>
-  <a href="/Data/post_slope.png"><img src="/Data/post_slopetn.png" align=right></a>
+  <a href="/Data/post_slope.png"><img src="/Data/post_slopetn.png" align=right width="350px"/></a>
   <figcaption> Slope graph of a Reddit posting's score over time</figcaption>
 </figure>
 The goal of this project is to analyze the score curves for posts on Reddit, to learn how popular and unpopular posts evolve over time.  Reddit was chosen as it has a nice API and a clear metric for a post's popularity.
