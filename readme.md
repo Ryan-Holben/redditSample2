@@ -1,9 +1,6 @@
 RedditSample
 ========
-<figure>
-  <a href="/Data/post_slope.png"><img src="/Data/post_slopetn.png" align=right width="350px"/></a>
-  <figcaption> Slope graph of a Reddit posting's score over time</figcaption>
-</figure>
+<a href="/Data/post_slope.png"><img src="/Data/post_slopetn.png" align=right width="350px" alt="d/dt Score(t)"/></a>
 The goal of this project is to analyze the score curves for posts on Reddit, to learn how popular and unpopular posts evolve over time.  Reddit was chosen as it has a nice API and a clear metric for a post's popularity.
 
 ### Running the experiment
@@ -14,5 +11,7 @@ We gather data over time using several independent threads.
 
 ### Analysis
 Before the score curves can be analyzed, we have to clean the data.  Reddit introduces soft caps into scores in order to level the playing field between posts in popular vs unpopular subreddit communities.  Our first step is to detect and remove any score jumps due to soft caps, of which there may be multiple for a single posting.
+
+<img href="/Data/capped.png" width="350px"> <img href="/Data/uncapped.png" width="350px">
 
 Next, we use numerical methods to look at first and second derivatives for the posting curves.  We then sort posts by final score, and generate PDFs of their graphs.
