@@ -14,6 +14,13 @@ Before the score curves can be analyzed, we have to clean the data.  Reddit intr
 
 <img src="/Data/capped.png" width="350px"> <img src="/Data/uncapped.png" width="350px">
 
-Next, we use numerical methods to look at first and second derivatives for the posting curves.  We then sort posts by final score, and generate PDFs of their graphs.
+Next, we use various numerical methods to look at our data.  This includes:
+
+1. Denoising our data:
+    * Using a high-pass filter over the frequency space (using SciPy's FFT and inverse FFT functions)
+    * Using a moving average
+2. Comparing first and second derivatives for successful/unsuccessful posts.
+
+We then sort posts by final score, and generate PDFs of their graphs, a sample of which is seen below.  More comprehensive results can be found in `Data/`'s PDF files.
 
 <img src="/Data/graphs.png">
