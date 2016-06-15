@@ -17,7 +17,7 @@ Before the score curves can be analyzed, we have to clean the data.  Reddit intr
 Next, we use various numerical methods to look at our data.  This includes:
 
 1. Denoising our data:
-    * Using a high-pass filter over the frequency space (using SciPy's FFT and inverse FFT functions)
+    * Using a high-pass filter over the frequency space (using SciPy's FFT and inverse FFT implementations)
     * Using a moving average
 2. Comparing first and second derivatives for successful/unsuccessful posts.
 
